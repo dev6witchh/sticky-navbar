@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sticky Navbar</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="images/logo.svg" alt="logo" class="logo">
+            <ul id="menu">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>PRODUCT</li>
+                <li>SERVICES</li>
+                <li>CONTACT US</li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi facere et impedit? Illo voluptates quaerat dolores a odio iure sunt, ut harum autem sequi eligendi voluptate exercitationem voluptatibus ea.
+            Repellendus officiis hic pariatur sequi, distinctio sit mollitia in ullam blanditiis cum et earum quam odio, inventore, illum vitae nostrum! Molestiae dicta quis fugit aspernatur laudantium! Quam aperiam maiores deleniti?
+            Nulla odit facere esse deleniti cum hic incidunt dicta commodi perspiciatis beatae est repudiandae quidem iste, recusandae voluptates consectetur corrupti tenetur eius nihil? Voluptatum consequuntur voluptatem ab, quas dolorum consequatur!
+            Aspernatur porro commodi pariatur culpa at aperiam, autem repellat totam repudiandae optio veniam nemo laudantium numquam vel explicabo beatae veritatis, voluptas eaque. Consequatur voluptas sequi recusandae, voluptates doloribus deleniti mollitia.
+            Eligendi cupiditate dolore, dolorem magnam dicta aliquid atque, maiores alias nihil fugiat ut sapiente natus corporis inventore architecto? Voluptas, autem. Obcaecati fuga earum ex quia, ea nostrum exercitationem veniam doloribus!
+        </p>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi facere et impedit? Illo voluptates quaerat dolores a odio iure sunt, ut harum autem sequi eligendi voluptate exercitationem voluptatibus ea.
+            Repellendus officiis hic pariatur sequi, distinctio sit mollitia in ullam blanditiis cum et earum quam odio, inventore, illum vitae nostrum! Molestiae dicta quis fugit aspernatur laudantium! Quam aperiam maiores deleniti?
+            Nulla odit facere esse deleniti cum hic incidunt dicta commodi perspiciatis beatae est repudiandae quidem iste, recusandae voluptates consectetur corrupti tenetur eius nihil? Voluptatum consequuntur voluptatem ab, quas dolorum consequatur!
+            Aspernatur porro commodi pariatur culpa at aperiam, autem repellat totam repudiandae optio veniam nemo laudantium numquam vel explicabo beatae veritatis, voluptas eaque. Consequatur voluptas sequi recusandae, voluptates doloribus deleniti mollitia.
+            Eligendi cupiditate dolore, dolorem magnam dicta aliquid atque, maiores alias nihil fugiat ut sapiente natus corporis inventore architecto? Voluptas, autem. Obcaecati fuga earum ex quia, ea nostrum exercitationem veniam doloribus!
+        </p>
+    </main>
+    
+    <script>
+        var navbar = document.getElementById('navbar');
+        var menu = document.getElementById('menu');
+
+        window.onscroll = function(){
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add('sticky')
+            }else{
+                navbar.classList.remove('sticky')
+            }
+        }
+    </script>
+</body>
+</html>
